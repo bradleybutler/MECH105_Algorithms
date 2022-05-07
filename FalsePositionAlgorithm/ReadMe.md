@@ -21,4 +21,12 @@
 * iter - Iterations
   + Amount of iteration to reach es or maxiter
 #### How it works
+* The function first makes sure that certain requirements are meant that are required for the false position formula to perform.
+  + The xl and xu values are checked to be of different signs to confirm that a root exists between the values
+* A while loop tests whether the old guess and newest guess at the root have an error close enough to terminate the loop
+  + If a guess ever equals 0 exactly, the loop breaks as the root has been found
+* While this while loop is running, the false position formula is computing the root, with every iteration of the while loop changing the lower and upper bounds guess for the formula
+  + The while loop acts as a clock for the iteration, adding one to its index every run of the loop
+  + Once any of the stopping critereon have been met, the while loop exits and all values have been properly computed
+
 
