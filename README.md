@@ -3,6 +3,4 @@
 ### Algorithms in this repository include:
 *Matrices Algorithm
 
-**Takes any sized matrix and gives it the required special properties, learing algorithm for working with matrices
-
 
